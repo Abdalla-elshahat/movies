@@ -1,0 +1,82 @@
+:root{
+  --profile-color:red;
+
+    --main-color: #F8B319;
+  
+}
+.activity {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 25px 0;
+}
+  .activity h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .activity p {
+    color: #666;
+    margin-bottom: 10px;
+    transition-duration: 0.5s;
+  }
+  
+  .activity a {
+    font-size: 14px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+  }
+  .activity h2:hover,
+  .activity p:hover,
+  .activity a:hover{
+color:var(--profile-color)
+  }
+  .activity .cardsprofile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Disables vertical scrolling */
+    white-space: nowrap; /* Prevents line breaks and keeps all children in a single line */
+    top: 0;
+    max-width: 850px;
+}
+.cardtext{
+  white-space: nowrap;       /* Prevents the text from wrapping to the next line */
+  overflow: hidden;          /* Ensures that the overflowing text is clipped */
+  text-overflow: ellipsis;
+}
+.activity .cardsprofile::-webkit-scrollbar {
+    height: 10px; /* Customize the scrollbar height */
+}
+
+.activity .cardsprofile::-webkit-scrollbar-thumb {
+  /* Customize the scrollbar thumb color */
+    border-radius: 10px; /* Optional: Rounded scrollbar thumb */
+}
+
+.activity .cardsprofile::-webkit-scrollbar-track {
+    background-color: #000000; /* Customize the scrollbar track color */
+}
+
+  .activity .cardsprofile .card{
+   margin: 5px;
+  }
+  .activity .cardsprofile .card button{
+    background-color: var(--profile-color);
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid var(--profile-color);
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    margin-top: 30px;
+  }

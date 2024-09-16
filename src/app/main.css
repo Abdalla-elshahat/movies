@@ -1,0 +1,80 @@
+
+.all{
+    display: flex;
+    width: 100%;
+    background-image:url("/images/Group 2.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: auto;
+  }
+  .all .side{
+    width:15%;
+    transition-duration: 0.5s;
+  }
+  .ax{
+    transform: translateX(300px);
+    }
+  .all .conten{
+    width:70%;
+  }
+  .all .nextside{
+    border-radius:10px;
+    height: 100%;
+    margin-top: 5px;
+    z-index: 111;
+  }
+body{
+  background-color:black;
+    color:white;
+    overflow-x: hidden;
+}
+body a{
+    color:white;
+    text-decoration: none;
+}
+@media (max-width: 1024px) {
+.all ,.all .conten{
+  display: flex;
+  flex-direction: column;
+}
+.all .conten{
+  width: 100%;
+}
+}
+@media (max-width:992px){
+  .dashboard {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    z-index: 22;
+    
+}
+}
+@media (max-width: 768px) {
+  .cont .cards .card{
+    width:100%
+  }
+  .slide p {
+    font-size: 5px;
+  }
+  .slide h1 {
+    font-size: 15px;
+}
+}
+@keyframes rotateIcon {
+  0% {
+    transform:translate(100px);
+  }
+  100% {
+    transform: translate(300px);
+  }
+}
+
+
+body {
+  direction: ltr;
+}
+
+html[lang="ar"] body {
+  direction: rtl;
+}

@@ -1,0 +1,27 @@
+:root {
+  --main-color: #F8B319;
+}
+
+.watchlist {
+   display: flex;
+   justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .watchlist h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .watchlist p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .watchlist a {
+    font-size: 14px;
+    font-weight: bold;
+  }

@@ -1,0 +1,79 @@
+:root {
+    --main-color: #F8B319;
+}
+.person .topperson{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top: 50px;
+    }
+.person .topperson .right{
+    width: 60%;
+ }
+.person .topperson .left img{
+   width: 80%;
+   border-Radius:5px
+}
+.chick{
+    color: var(--main-color);
+}
+.personal-info {
+    font-family: Arial, sans-serif;
+    color: #727272;
+    margin: 20px 0;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    transition-duration: 0.5s;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+    font-size: 25px;
+    color:var(--main-color)
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 15px;
+  }
+
+  ul li strong{
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  ul li strong{
+  color:white;
+  cursor: pointer;
+  }
+  ul li span {
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
+  .face:hover{
+    color:rgb(0, 0, 174)
+  }
+  .twi:hover{
+   color: rgb(0, 140, 255);
+  }
+  .ins:hover{
+    color:rgb(255, 0, 200);
+  }
+  .you:hover{
+    color:red;
+  }

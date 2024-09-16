@@ -1,0 +1,193 @@
+:root{
+    --main-color:#F8B319;
+}
+a{
+    text-decoration: none !important;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+.navbarh{
+    width: 55%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+.navbarh ul{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+}
+.navbarh ul a{
+   font-size: 25px;
+   font-weight: 500;
+   transition-duration: 0.5s;
+}
+.navbarh ul a:hover{  
+  cursor: pointer;
+  color: #F8B319;
+ }
+.navbarh .search input{
+   background-color:transparent;
+   border: none;
+   outline: none;
+   margin-left: 10px;
+ }
+.navbarh .search{
+   display: flex;
+   justify-content: center;
+   align-items:center;
+    background-color: rgba(128, 128, 128, 0.521);
+   border-radius: 5px;
+   padding: 5px;
+   margin-left: 20px;
+}
+.header .sin a,
+.header .sin button{
+    background-color:var(--main-color);
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius:5px;
+    margin: 10px;
+    padding: 5px;
+}
+.logoutgroub{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.logoutgroub strong{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: -12px;
+}
+.tvv{
+    background-color:black !important;
+    color:gray !important;
+    text-align: center;
+    font-size:25px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+.tvv:hover{
+    color:var(--main-color) !important;
+}
+.dropdown-menu{
+    height: 300px;
+    overflow:auto;
+    background-color:black !important;
+    color:white !important;
+    z-index: 1;
+    padding: 10px;
+}
+.ptnlogout{
+    transition-duration: 0.5s;
+}
+.ptnlogout:hover{
+    color:var(--main-color);
+}
+.searchicon{
+   transition-duration: 0.5s;
+   font-size: 20px;
+    }
+.searchicon:hover{
+color:var(--main-color);
+transform: scale3D(2,2,2);
+}
+
+.iconselect{
+    font-size: 70px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    display: none;
+}
+.iconselect:hover{
+    color:var(--main-color);
+}
+@media (max-width: 1024px) {
+ .search{
+    width: 25%;
+ }
+ .search input{
+    width: 63%;
+ }
+ .logoutgroub strong {
+    font-size: 15px;
+ }
+}
+@media (max-width:992px){
+    .logo img{
+        width: 70px;
+    }
+    .navbarh ul a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+    .search{
+        width: 30%;
+    }
+    .search input{
+        width: 20%;
+    }
+    .navbarh {
+       width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        padding-bottom:150px;
+    }
+    .iconselect{
+     display: block;
+    }
+    .navbarh{
+        display: none;
+    }
+    .active{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 66;
+        top: 12%;
+        width: 96%;
+        margin: 4% -3%;
+    }
+    .navbarh ul {
+        flex-direction: row;
+    }
+    .search{
+        display: block;
+        width: 100%;
+    }
+    .search input{
+        width: 100%;
+    }
+}
+@media (max-width: 576px) {
+    .logoutgroub strong {
+        font-size: 15px;
+    }
+}
+@media (max-width: 480px) {
+  
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    color: white; /* or any color that fits your navbar */
+  }
+  
+  nav button span {
+    margin-left: 8px; /* Add some spacing between icon and text */
+    font-size: 1rem;
+  }
+  

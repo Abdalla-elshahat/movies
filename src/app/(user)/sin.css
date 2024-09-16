@@ -1,0 +1,25 @@
+:root{
+    --main-color:#F8B319;
+}
+.maindiv{
+    background-color: black !important;
+    box-shadow: 2px 2px 5px var(--main-color);
+    color:var(--main-color);
+    margin: 100px 0;
+}
+.maindiv h1{
+    color:var(--main-color)
+}
+input{
+    outline: none;
+    background-color:transparent;
+    border:var(--main-color);
+    color:white;
+    border-bottom: 1px solid var(--main-color);
+}
+.maindiv .loginbtn,
+.maindiv  .rejesterbtn{
+    background-color: var(--main-color);
+    color:black;
+    margin: 20px 0;
+}

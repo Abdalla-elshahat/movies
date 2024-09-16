@@ -1,0 +1,60 @@
+:root{
+  --tmdbDarkBlue:rgb(3 37 65);
+  --main-color: #F8B319;
+}
+.profile-inputNO{
+  width: 2%;
+  font-size: 20px;
+}
+.block{
+  display: flex;
+  align-items:center;
+}
+/* Change checkbox size */
+input[type="checkbox"] {
+  width: 20px;  /* Adjust the size */
+  height: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Change color of the checked checkbox */
+input[type="checkbox"]:checked {
+  accent-color: var(--main-color); /* Supported in modern browsers */
+}
+
+/* Or use :checked with a custom background (older method) */
+input[type="checkbox"]:checked {
+  background-color: var(--main-color);
+  border: 2px solid var(--main-color);
+}
+
+
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.coming-soon {
+  color: gray;
+  font-style: italic;
+}

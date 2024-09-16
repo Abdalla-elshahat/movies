@@ -1,0 +1,150 @@
+:root{
+    --main-color:#F8B319;
+}
+.cont{
+    width: 100%;
+    padding: 50px;
+}
+.cont h1{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    margin-top: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cont .cards{
+    width:100%;
+    height:auto;
+    bottom: 0;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+.cont .cards .card{
+    border: none;
+    border-radius: 0 !important;
+    height:auto;
+    width: 32%;
+    margin: 50px 0;
+    background-color:black;
+    box-shadow: 2px 2px 5px var(--main-color) ;
+    padding:5px;
+}
+.cont .cards .card img{
+    height: 400px!important;
+    opacity: 0.8;
+    width: 100%;
+    border-radius:0
+}
+.cont .cards  .card  .name{
+font-size: 20px;
+font-weight: bold;
+text-align: center;
+bottom:0
+  }
+  .cont .cards  .card  .card-dark {
+   display: grid;
+  }
+.cont .cards  .card  .card-dark  button{
+    background-color: var(--main-color);
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    margin-top: 30px;
+  }
+  .cont .cards  .card  .card-dark  button:hover{
+    background-color:black;
+    color:var(--main-color);
+  }
+
+  .cont .back{
+    display: flex;
+   flex-direction:row;
+   align-items:center;
+   justify-content: space-around;
+   width: 15%;
+}
+.cont .back p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0;
+}
+.cont .back .iconback{
+    background-color: rgb(131 131 131 / 44%);
+    font-size: 25px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.cont .back .iconback:hover{
+  color:black;
+  background-color:var(--main-color);
+}
+.voteaverage{
+    position: absolute;
+    color: white;
+    background-color: red;
+    z-index: 5;
+    padding: 0 5px;
+    font-size: 25px;
+    border-radius: 18px 0 18px 0px;
+    font-weight: bold;
+}
+.cont .selecttrend{
+float: right;
+}
+.cont #selecttrend{
+  color:var(--main-color);
+background-color:black;
+border:1px solid var(--main-color);
+outline: none;
+}
+.empty{
+    font-size: 180px;
+    color: red;
+    text-shadow: 11px 11px 40px red;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: fantasy;
+}
+
+
+
+@media (max-width: 1024px) {
+ .cont .back{
+width: 15%;
+ }
+}
+@media (max-width:992px){
+ .cont .back{
+  width: 25%;
+ }
+}
+@media (max-width: 768px) {
+  .cont .back{
+    width: 35%;
+  }
+  .cont .cards .card{
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .cont .back{
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .cont .back{
+    width: 100%;
+  }
+}

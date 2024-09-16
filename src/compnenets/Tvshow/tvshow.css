@@ -1,0 +1,30 @@
+:root{
+    --main-color:#F8B319;
+}
+.slide{
+    width:95%;
+    margin: 10px;
+}
+.slide .card{
+   position: relative;
+}
+.slide img{
+    border-radius: 2%;
+    height: 100%;
+}
+.slide h1{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bold;
+        color:var(--main-color);
+        text-transform: capitalize;
+}
+.slide p{
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+    opacity: 0.5;
+    text-transform: capitalize;
+}

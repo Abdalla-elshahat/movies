@@ -1,0 +1,189 @@
+:root {
+  --main-color: #F8B319;
+}
+
+.profile-edit {
+  width: 838px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  .profile-edit input{
+    border:none
+  }
+  .profile-textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    height: 100px;
+  }
+  
+  .avatar-section,
+  .background-section {
+    margin-bottom: 20px;
+    border:none;
+    display: flex;
+  }
+  
+  .color-options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 20px 0px;
+  }
+  
+  .color-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 25px;
+    color:white;
+  }
+  .color-circle.selected {
+   border: 1px solid white;
+  }
+
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .social-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .profile-edit p{
+    text-align: left;
+  }
+  .save{
+    text-align:center;
+    background-color:var(--main-color);
+    color:white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    border-radius:5px;
+    padding: 5px 10px;
+  }
+  .save:hover{
+   background-color:rgb(155, 155, 155);
+   color:black;
+  }
+  .profile-edit a{
+    color:var(--main-color)
+  }
+  .avatar img{
+max-width: 25%;
+margin: 10px 0;
+  }
+
+.iconload{
+  font-size: 50px;
+  color:black;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.iconload:hover{
+  color:var(--main-color);
+}
+.avatar-section input,
+.background-section input{
+  display: none;
+}
+
+
+  @media (max-width: 768px) {
+    .profile-edit {
+      padding: 10px;
+    }
+    .profile-actions {
+      flex-direction: column;
+    }
+    .accent-color-section{
+      flex-direction: column;
+      align-items: baseline;
+    }
+  
+    .social-section {
+      grid-template-columns: 1fr;
+    }
+  
+    .avatar-section, .background-section, .accent-color-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: min-content;
+    }
+  
+    .avatar-section a,
+    .background-section a {
+      margin-top: 10px;
+    }
+    .form-row{
+      flex-direction: column;
+    align-items: baseline;
+    }
+    .profile-edit .btn,
+    .profile-edit input{
+      width: max-content;
+    }
+    .profile-edit input{
+      width:auto;
+    }
+    .color-options {
+      align-items: baseline;
+      margin-right: auto;
+      flex-direction: column;
+  }
+    .profile-edit select,
+    .profile-edit textarea{
+      width: auto;
+    }
+    .social-section {
+      flex-direction: column;
+    }
+  }
+  
+  /* Tablet responsiveness */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .profile-actions {
+      gap: 10px;
+    }
+  
+    .social-section {
+      grid-template-columns: 1fr 1fr;
+    }
+  }

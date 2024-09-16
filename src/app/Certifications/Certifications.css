@@ -1,0 +1,14 @@
+:root{
+    --main-color:#F8B319;
+}
+.coo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bac{
+    background-color:var(--main-color);
+    padding: 2px;
+    margin: 3px;
+    border-radius:5px
+}

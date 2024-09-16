@@ -1,0 +1,291 @@
+:root{
+    --main-color:#F8B319;
+}/* Header and Main Body Styling (same as before) */
+.contribution-container {
+    font-family: Arial, sans-serif;
+  }
+  
+  .contribution-header {
+    background-color: #082545;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .tmdb-link, .back-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .contribution-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contribution-body {
+    text-align: center;
+    background-color: #082545;
+   
+    color: white;
+    background-image: radial-gradient(circle 180px at center 350px, rgba(255, 255, 255, .14) 0, rgba(255, 255, 255, 0) 100%);
+    padding: 50px 0;
+    background-image:url("https://www.themoviedb.org/assets/2/v4/bible/bible_fanout-78abdeea01711cb0d9415c0bdd65438ef17c6093033fd040b884e7f417064ae5.png");
+    height: 500px;  
+    position: relative;
+    background-size:cover;
+}
+  
+  .contribution-body h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .contribution-body h1 span {
+    font-size: 50px;
+  }
+  .search-bar {
+    margin: 20px 0;
+  }
+  
+  .search-input {
+    padding: 13px;
+    font-size: 20px;
+    width: 65%;
+    outline: none;
+    color: black;
+    border-radius: 7px;
+    font-style: italic;
+    border: 1px solid #ccc;
+  }
+  
+  .bible-icon {
+    background-image: url('https://www.themoviedb.org/assets/2/v4/bible/bible-b1fb61ee6c075f5b822279e291ec40fa02e00fc0d2513a518752e11114ebeaec.svg'); /* Placeholder for the icon */
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 46%;
+    bottom: -12%;
+  }
+  .allsection{
+padding: 20px 150px;
+background-color: white;
+  }
+  .content-cards{
+   display:flex;
+   justify-content: center;
+   align-items:center
+  } 
+  .content-cards .section{
+    background-color:rgb(7, 0, 56);
+    width: 50%;
+    padding: 45px 15px;
+    margin: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    max-width: 25%;
+   } 
+    .section:hover,
+    .bible:hover{
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 55px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 55px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 55px -1px rgba(0,0,0,0.75);
+   } 
+   .content-cards .section h2{
+   font-size: 25px;
+   border-bottom: 2px solid var(--main-color);
+   padding-bottom:10px;
+   color:white;
+   font-weight: bold;
+   } 
+
+   section.tall_bibles {
+    width:auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.5s;
+    padding: 50px 100px;
+}
+section.tall_bibles div.bible {
+    background-color: rgba(var(--tmdbDarkBlue), 1);
+    background-size: cover;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 235px;
+    height: 500px;
+    margin-right: 20px;
+}
+section.tall_bibles div.bible div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding-bottom: 26px;
+}
+section.tall_bibles div.bible p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: clamp(1rem, 6vw, 2rem);
+    text-transform: uppercase;
+    margin: 0;
+}
+div.bible span {
+    width: 50px;
+    height: 3px;
+    display: block;
+    border-radius: 3px;
+    margin: 8px 0;
+}
+
+section.tall_bibles div.bible.movie span {
+    background-color: #f82251;
+}
+section.tall_bibles div.bible.tv span {
+    background-color: #865bfd;
+}
+div.bible.people span {
+    background-color: #0084ea;
+}
+section.tall_bibles div.bible.collection span {
+    background-color: #e08b00;
+}
+section.tall_bibles div.bible.movie {
+    background-image: url("/images/c1.png");
+}
+section.tall_bibles div.bible.tv {
+    background-image: url("/images/c2.png");
+}
+section.tall_bibles div.bible.people {
+    background-image: url("/images/c3.png");
+}
+section.tall_bibles div.bible.collection {
+    background-image: url("/images/c4.png");
+}
+
+
+  .section {
+    text-align: center;
+    color: white;
+  }
+  
+  .section h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #00ff99;
+  }
+  
+  .section-image {
+    width: 200px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .darth-vader {
+    background-image: url('/path/to/darth-vader-image.png'); /* Placeholder for the image */
+  }
+  
+  .tv-content {
+    background-image: url('/path/to/tv-content-image.png'); /* Placeholder for the image */
+  }
+  
+  .people-content {
+    background-image: url('/path/to/people-content-image.png'); /* Placeholder for the image */
+  }
+  
+  .collection-content {
+    background-image: url('/path/to/collection-content-image.png'); /* Placeholder for the image */
+  }
+  
+  /* Featured Articles Section */
+  .featured-articles {
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  .featured-articles h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .articles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .article {
+    display: flex;
+    align-items: center;
+    background-color:transparent;
+    padding: 10px 0px;
+    color: black;
+    border-bottom:1px solid gray;
+
+  }
+  
+  .article-category {
+    width: 150px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .article-title {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .movie {
+    background-color: #ff3c3c;
+    color: white;
+  }
+  
+  .new-content {
+    background-color: #00ff99;
+    color: white;
+  }
+  
+  .image {
+    background-color: #00ccff;
+    color: white;
+  }
+  
+  .tv {
+    background-color: #6f42c1;
+    color: white;
+  }
+  
+  .general {
+    background-color: #28a745;
+    color: white;
+  }
+  

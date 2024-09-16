@@ -1,0 +1,77 @@
+/* descion.css */
+:root{
+  --profile-color:red;
+}
+.discussions {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--profile-color);
+  font-family: 'Arial', sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.discussions h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.blod {
+  margin-bottom: 30px;
+}
+
+
+.blod p {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition-duration: 0.5s;
+}
+
+.blod p span {
+  font-weight: 600;
+  color: #555;
+  margin-left: 10px;
+}
+
+.blod p svg {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+.blod p .fa {
+  color: #007bff;
+}
+.blod p .in {
+  color: #ff00bb;
+}
+.blod p .tw {
+  color: #52a1f5;
+}
+.blod p .gi {
+  color: #ff7700;
+}
+.blod p .ti {
+  color: #ff134e;
+}
+.blod p .yo {
+  color: #ff0000;
+}
+.blod p .li {
+  color: #001298;
+}
+.blod p:hover {
+  background-color: #000000;
+  box-shadow: 0 4px 8px var(--profile-color);
+  border:none;
+  cursor: pointer;
+}

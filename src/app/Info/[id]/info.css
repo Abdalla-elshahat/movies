@@ -1,0 +1,248 @@
+:root {
+    --main-color: #F8B319;
+}
+
+.Info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    position: relative; /* To position the ::before pseudo-element */
+    margin-bottom: 10%;
+}
+
+.Info::before {
+    content: "";
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--backdrop-image);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.Info .left {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    text-align: left;
+    z-index: 1;
+}
+
+.Info .left .back {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.Info .left .back p {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+.Info .left .back .iconback {
+    background-color: rgba(131, 131, 131, 0.44);
+    font-size: 25px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.Info .left .back .iconback:hover {
+    color: black;
+    background-color: var(--main-color);
+}
+
+.Info .left .someinfo {
+    padding-left: 50px;
+}
+
+.Info .left .someinfo h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Info .left .someinfo section {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: 10px 0;
+}
+
+.Info .left .someinfo h5 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.Info .left .someinfo .smallimg {
+    margin: 20px 0;
+}
+
+.Info .left .someinfo p {
+    font-size: 20px;
+    max-width: 97%;
+    margin-bottom: 30px;
+}
+
+.Info .left .someinfo .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+}
+
+.Info .left .someinfo button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.Info .left .someinfo .watchlist {
+    background-color: rgba(128, 128, 128, 0.374);
+    color: white;
+    border: 1px solid rgba(128, 128, 128, 0.374);
+}
+
+.Info .left .someinfo .watchlist:hover {
+    background-color: black;
+    border-color: white;
+}
+
+.Info .left .someinfo .watchnow {
+    background-color: var(--main-color);
+    color: black;
+}
+
+.Info .left .someinfo .watchnow:hover {
+    background-color: black;
+    color: var(--main-color);
+}
+
+.Info .right {
+    width: 50%;
+    z-index: 1;
+}
+
+.Info .right span {
+    position: relative;
+}
+
+.Info .right span h1 {
+    position: absolute;
+    top: 40px;
+    left: -30px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    padding: 0 10px;
+    width: 25%;
+    transform: rotate(-45deg);
+    text-align: center;
+    border-radius: 80px 71px 0 0;
+}
+
+.changecolor {
+    background-color: white !important;
+    color: black !important;
+}
+
+.done {
+    color: red;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .Info .left {
+        max-width: 60%;
+    }
+    .Info .right {
+        width: 40%;
+    }
+    .Info .left .back {
+        width: 35%;
+    }
+}
+
+@media (max-width: 768px) {
+    .Info {
+        flex-direction:column-reverse;
+        padding: 20px;
+    }
+    .Info .left,
+    .Info .right {
+        max-width: 100%;
+        width: 100%;
+    }
+    .Info .right img{
+        width: -webkit-fill-available;
+        margin-top: 25%;
+    }
+    .Info .right span h1 {
+        margin-top: 25%;
+    }
+    .Info .left .back {
+        width: 35%;
+    }
+    .Info .left .someinfo {
+        padding-left: 20px;
+    }
+    .Info .left .someinfo h1 {
+        font-size: 40px;
+    }
+    .Info .left .someinfo .buttons {
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .Info .left .back {
+        width: 45%;
+    }
+    .Info .left .someinfo h1 {
+        font-size: 35px;
+    }
+    .Info .left .someinfo p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Info .left .back {
+        width: 59%;
+    }
+    .Info .left .someinfo h1 {
+        font-size: 30px;
+    }
+    .Info .left .someinfo p {
+        font-size: 16px;
+    }
+    .Info .left .buttons button{
+        font-size: 10px;
+    }
+    .Info .right span h1 {
+        position: absolute;
+        top: 14px;
+        left: -13px;}
+}

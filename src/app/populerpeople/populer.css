@@ -1,0 +1,26 @@
+:root {
+    --main-color: #F8B319;
+}
+
+.cardpeople{
+    cursor: pointer;
+}
+.pagination{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pagination .actives {
+   background-color:var(--main-color)
+}
+.pagination .disabled{
+    background-color:gray
+ }
+.pagination button {
+  margin: 0 5px;
+  padding:0 10px ;
+  font-size: 20px;
+ }
+ .pagination .nn:hover{
+   color:var(--main-color)
+   }
