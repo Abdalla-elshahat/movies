@@ -4,7 +4,7 @@ import "./editeprofile.css";
 import { FaInstagram, FaTwitter, FaTiktok, FaYoutube, FaGithub, FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { MdDone } from "react-icons/md";
-import { ProfileContext } from "/src/compnenets/Profilestate";
+import { ProfileContext } from "../../../compnenets/Profilestate";
 import { BsFillCloudUploadFill } from "react-icons/bs";
 import { GoDesktopDownload } from "react-icons/go";
 import Link from "next/link";
