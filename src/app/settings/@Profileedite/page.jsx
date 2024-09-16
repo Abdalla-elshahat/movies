@@ -7,7 +7,6 @@ import { MdDone } from "react-icons/md";
 import { ProfileContext } from "/src/compnenets/Profilestate";
 import { BsFillCloudUploadFill } from "react-icons/bs";
 import { GoDesktopDownload } from "react-icons/go";
-import { DOMAIN } from "@/utels/consts";
 import Link from "next/link";
 
 const ProfileEdit = () => {
@@ -38,7 +37,7 @@ const ProfileEdit = () => {
     // Fetch the username from the API route
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`${DOMAIN}/api/get-cookie`);
+        const response = await fetch(`/api/get-cookie`);
         if (response.ok) {
           const data = await response.json();
           setUsername(data.username);
