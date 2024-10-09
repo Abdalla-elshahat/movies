@@ -10,21 +10,10 @@ padding-bottom: 0;
    width:auto;
    z-index: 552;
    background-color:black;
-    transform:translateX(-100%);
+   transition-duration: 1s;
     }
     .sef{
-animation-name: high ;
-animation-duration:  1s;
-animation-timing-function: ease-in-out;
-animation-fill-mode: both;
-    }
-    @keyframes high{
-       0% {
-            transform:translateX(-100%);
-        }
-        100% {
-          transform: translateX(0);
-        }
+transform:translateX(-100%);
     }
 .sidebar h1{
 text-align: center;
